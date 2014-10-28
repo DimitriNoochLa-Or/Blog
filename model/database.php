@@ -1,6 +1,6 @@
 <?php
-// variables for the host name. and username and password
+// variables for the host name ,username and password
 	$host = "localhost";
 	$username = "root";
 	$password = "root";
-	$data_base = "blog_db";
+	$database = "blog_db";
