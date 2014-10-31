@@ -35,4 +35,13 @@
 				. "PRIMARY KEY (id))");
 			//up to 11 values in integer
 
+			if($query) {
+				echo "Successfully created table :posts";
+
+
+			}
+			else{
+				echo "$connection->error";
+			}
+
 	$connection->close();
