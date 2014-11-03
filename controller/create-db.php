@@ -7,7 +7,7 @@
 
 	if($connection->connect_error){
 		// if connection doesnt work the connection dies
-		die("<p>Error: " . $connection->connect_error"<p>");
+		die("Error: " . $connection->connect_error);
 	}
 	// selects data base and tells whether its exists or not
 	$exists = $connection->select_db($database);
@@ -19,14 +19,14 @@
 		//creates database blog_db
 		$query = $connection->query("CREATE DATABASE $database");
 		if($query){
-			echo "<p>Successfully created a database: " . $database"<p>";
+			echo "Successfully created a database: " . $database;
 			//outputs that query is true
 
 		}
 	}
 	//else statement is only executed if the database already exist
 	else {
-		echo "<p>Database has already exists.<p>";
+		echo "<p>Database has already exists.</p>";
 	}
 	
 	$query = $connection->query("CREATE TABLE posts ("  //creates a table by query
@@ -43,4 +43,4 @@
 	else{
 		echo "<p>$connection->error</p>";			//lets you know that table:posts already exists
 	}
-	$connection->close();							
+	$connection->close();							//closes connection
