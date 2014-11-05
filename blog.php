@@ -1,5 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	  <link rel="stylesheet" type="text/css" href="css/main.css">
 
-<?php
+</head>
+
+<body id="background">
+	<?php
 // The require_once statement is identical to require except PHP will check 
 // if the file has already been included, and if so, not 
 // include (require) it again
@@ -14,3 +22,6 @@
 	// executes file from here and concatinates the directory from here
 
 ?>
+</body>
+</html>
+
