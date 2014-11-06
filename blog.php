@@ -21,7 +21,7 @@
 
 	// executes file from here and concatinates the directory from here
 
-?>
+	?>
 </body>
 </html>
 

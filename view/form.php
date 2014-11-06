@@ -1,7 +1,13 @@
+<?php
+	require_once(__DIR__ . "/../model/config.php");
+	// now have access to the path variable
+?>
 <h1>Create BLog Post</h1>
 <!-- created header -->
 
-<form>
+<form method="post" action="<?php echo $path . "controller/create-post.php";?>">
+<!-- tell the action of what we want to preform -->
+<!-- method allows you to show sent or received  -->
 <!-- first div box is for the title -->
 	<div>
 		<label for="title">Title: </label>
