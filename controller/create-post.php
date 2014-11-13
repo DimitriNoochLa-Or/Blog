@@ -7,8 +7,21 @@
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);//sanitizing it to make sure its a string 
 	//tells that it is what is posted
 	$post= filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING);
+//running query to check if its true or false.
+	//query is able to inser information
+	//refrences posts table
+	//set is to set certain values for title 
+	//using single qoute becuz we awant to know that it is converted to a string when posted
+	$query = $connection->query("INSERT INTO posts SET title = '$title' , post = '$post' ");
+//checks if we have atrue value for the query
+	if($query){
+		//echos statement below is it is true
+		echo "<p>Successfully inserted post: $title</p>";
 
-	echo "<p>Title: $title </p>";
-	echo "<p>Post: $post </p>";
+	}
+
+	else{
+		echo "<p>$connection->error</p>";
+	}
 //closing connection 
 	$connection->close();
