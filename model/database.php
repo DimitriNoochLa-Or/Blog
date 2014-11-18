@@ -15,6 +15,38 @@ class Database{
 	private $password;
 	private $database;
 	//these variable can only be access thru this class 
+//public so we can access it thru all files
+	//The constructor is called on an object after it has been created
+	//__construct is a substitution for the TheActualFunctionName
+	public function __construct($host, $username , $password ,$database) {
+		$this->host = $host;//allows access to the private variables
+		$this->username = $username;//assigning the global variable to $this->"variable name"
+		$this->password = $password;
+		$this->database = $database;
+	}
+//a function for replacing connection
+	public function openConnection() {
+		$this->connection = new mysqli($this->host , $this->username, $this->password,$this->database);
+		//new connection for my sqli object and
+		// its checking if it has a connection error or not
+		if($this->connection->connect_error){
+			// if connection doesnt work the connection dies
+			die("Error: " . $this->connection->connect_error);
+	 	}
+	}
+// a function for replacing close connection
+	public function closeConnection() {
+		//using if to check we have established a working connection or not
+		//isset checks if the variable is set or not and it is checking if 
+		//there is some  present in the variabl 
+		if(isset($this->connection)){
+			$this->connection->close();
+		}
 
+	}
+}
+//replacing code for query
+	public function query($string) {
 
+	}
 }
