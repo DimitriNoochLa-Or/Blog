@@ -1,10 +1,8 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");
 	//dir concatinates the directory to the file 
-// Open a new connection to the MySQL server
-	$connection = new mysqli($host , $username, $password);
-	// when calling new it calls the mysql constructor
-//-> is an object 
+
+    //-> is an object 
 	if($connection->connect_error){
 		// if connection doesnt work the connection dies
 		die("Error: " . $connection->connect_error);

@@ -38,15 +38,23 @@ class Database{
 	public function closeConnection() {
 		//using if to check we have established a working connection or not
 		//isset checks if the variable is set or not and it is checking if 
-		//there is some  present in the variabl 
+		//there is something present in the variable
 		if(isset($this->connection)){
-			$this->connection->close();
+			$this->openConnection();//open connection
+
+			$query = $this->connection->query($string);
+			//execute the query in database
+
+			$this->openConnection();//close connection
+
+			return $query;//returns if it is true or false
+
 		}
 
 	}
 }
 //replacing code for query
 	public function query($string) {
-
+		$this->openConnection();
 	}
 }
