@@ -2,13 +2,6 @@
 <html>
 <head>
 	<title></title>
-	  <link rel="stylesheet" type="text/css" href="css/main.css">
-	  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
-
 </head>
 
 <body id="background">
@@ -22,8 +15,9 @@
 	require_once(__DIR__ . "/view/header.php");
 	require_once(__DIR__ . "/view/navigation.php");
 	require_once(__DIR__ . "/controller/create-db.php");
-	require_once(__DIR__ . "/view/footer.php");
 	require_once(__DIR__ . "/controller/read-posts.php");
+	require_once(__DIR__ . "/view/footer.php");
+	
 
 
 
