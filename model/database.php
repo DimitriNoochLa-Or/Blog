@@ -14,16 +14,41 @@ class Database{
 	private $username;
 	private $password;
 	private $database;
+	public $error;
 	//these variable can only be access thru this class 
 //public so we can access it thru all files
 	//The constructor is called on an object after it has been created
 	//__construct is a substitution for the TheActualFunctionName
-	public function __construct($host, $username , $password ,$database) {
-		$this->host = $host;//allows access to the private variables
-		$this->username = $username;//assigning the global variable to $this->"variable name"
-		$this->password = $password;
-		$this->database = $database;
-	}
+	public function __construct($host, $username, $password, $database) { //*Local variables 
+			$this->host = $host; 
+			$this->username = $username;
+			$this->password = $password;
+			$this->database = $database;
+
+			$this->connection = new mysqli($host, $username, $password);
+
+		//*  Checks for an error. If the connection fails it is told to DIE.
+		if ($this->connection->connect_error) {
+			die("<p>Error: " . $this->connection->connect_error . "</p>");
+		}
+
+		$exists = $this->connection->select_db($database);
+			//* If connection exists it'll run query.
+			if (!$exists) {
+				//* Query asks if there is a connection to the database. If not it'll create a database.
+				$query = $this->connection->query("CREATE DATABASE $database");
+
+			if ($query) {
+				//* Echoes text if a database is created.
+				echo "<p>Successfully created database: " . $database . "</p>";
+			}
+		}
+
+			else {
+				//* Echoes text if database already exists.
+				echo "<p>Database already exists</p>";
+			}			
+		}
 //a function for replacing connection
 	public function openConnection() {
 		$this->connection = new mysqli($this->host , $this->username, $this->password,$this->database);
@@ -40,21 +65,24 @@ class Database{
 		//isset checks if the variable is set or not and it is checking if 
 		//there is something present in the variable
 		if(isset($this->connection)){
-			$this->openConnection();//open connection
-
-			$query = $this->connection->query($string);
-			//execute the query in database
-
-			$this->openConnection();//close connection
-
-			return $query;//returns if it is true or false
+			$this->connection->close();
+			
 
 		}
 
 	}
-}
-//replacing code for query
+
+    //replacing code for query
 	public function query($string) {
 		$this->openConnection();
+
+		$query = $this->connection->query($string);
+
+		if(!$query) {
+			$this->error = $this->connection->error;
+		}
+		 $this->closeConnection();
+
+		 return $query;
 	}
 }

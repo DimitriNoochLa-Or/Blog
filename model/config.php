@@ -1,4 +1,7 @@
 <?php
+	require_once(__DIR__ . "/Database.php");
+	session_start();
+
 	$path = "/blog/";
 	//create a path variable so it takes the path to the blog fileS
 	
@@ -8,4 +11,7 @@
 	$password = "root";
 	$database = "blog_db";
 //created variable connection
-	$connection = new Database($host, $unsername , $password, $database);
+	if(!isset ($_SESSION["connection"])) {
+		$connection = new Database($host, $username , $password, $database);
+		$_SESSION["connection"] = $connection;
+	}
