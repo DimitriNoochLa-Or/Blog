@@ -14,7 +14,7 @@
 	<br>
 	<br>
 		<h1>Login</h1>
-		<form method="post" action="<?php echo $path . "blog.php" ; ?>">
+		<form method="post" action="<?php echo $path . "/../controller/login-user.php" ; ?>">
 		        <div class="login fonttext">
 					<label for="username">Username:</label>
 					<input type="text" name="username" />
@@ -25,7 +25,7 @@
 				</div>
 
 			    <div class="login fonttext">
-					<button type="submit" href="Sblog.php">CLICK THE BUTTON!!!</button>
+					<button type="submit">CLICK THE BUTTON!!!</button>
 				</div>
 		</form>
 
