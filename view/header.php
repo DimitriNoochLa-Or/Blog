@@ -32,6 +32,8 @@
           <li class="fonttext navbar-brand "><a href="post.php"><font color="orange">Create Post</font></a></li>
           <li class="navbar-brand fonttext "><a href="register.php"><font color="orange">Sign Up</font> <span class="sr-only">(current)</span></a></li>
           <li class="fonttext navbar-brand "><a href="login.php"><font color="orange">Log in</font></a></li>
+          <li class="fonttext navbar-brand "><a href="loginout-user.php"><font color="orange">Log in</font></a></li>
+
          
    
         </ul>
