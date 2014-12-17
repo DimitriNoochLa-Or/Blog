@@ -76,8 +76,10 @@
 }
 .pushright{
 	position:fixed;
+  top:100px;
 	left: 1000px;
   width:80%;
+
 }
 .height{
 	height:60px;
