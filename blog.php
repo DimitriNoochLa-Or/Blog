@@ -7,7 +7,7 @@
 		//navigation is a link to pour post
 			require_once(__DIR__ . "/controller/login-verify.php");  
 			require_once(__DIR__ . "/view/header.php");
-			if(authenticatedUser()){
+			if(authenticateUser()){
 				require_once(__DIR__ . "/view/navigation.php");
 
 			}

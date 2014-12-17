@@ -11,7 +11,7 @@
 /*end of snow man*/
 
 .fonttext{
-	font-size:24px;
+	font-size:50px;
 	font-family: 'Sigmar One', cursive;
 
 }
@@ -28,6 +28,21 @@
 	/*for ipad*/
 }
 /*For background*/
+.social{
+   opacity:.8;
+   -webkit-transition: -webkit-all .5s ease;
+   -moz-transition: -moz-all .5s ease;
+   -o-transition: -o-all .5s ease;
+   transition: all .5s ease;
+   display:inline-block;
+   padding:15px 5px 10px 20px;
+   background-color:gray;
+   width:55px;
+   height:60px;
+   margin:0px;
+   
+   
+}
 
 /*for social links*/
 .socials li{
