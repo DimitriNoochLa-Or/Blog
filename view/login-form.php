@@ -1,19 +1,33 @@
 <?php 
+	    require_once(__DIR__ . "/header.php");
 		require_once(__DIR__ . "/../model/config.php");
+
 ?>
-<h1>Login</h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 
 
-<form method="post" action="<?php echo $path . "controller/create-user.php" ; ?>">
-        <div>
-			<label for="username">Username:</label>
-			<input type="text" name="username" />
-		</div>
-		<div>
-			<label for="password">Password:</label>
-			<input type="password" name="password" />
-		</div>
+</head>
+	<body>
+	<br>
+	<br>
+		<h1>Login</h1>
+		<form method="post" action="<?php echo $path . "blog.php" ; ?>">
+		        <div class="login fonttext">
+					<label for="username">Username:</label>
+					<input type="text" name="username" />
+				</div>
+			    <div class="login fonttext">
+					<label for="password">Password:</label>
+					<input type="password" name="password" />
+				</div>
 
-		<div>
-			<button type="submit">CLICK THE BUTTON!!!</button>
-		</div>
-</form>
+			    <div class="login fonttext">
+					<button type="submit" href="Sblog.php">CLICK THE BUTTON!!!</button>
+				</div>
+		</form>
+
+	</body>
+</html>

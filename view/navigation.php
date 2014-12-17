@@ -13,6 +13,9 @@
 		require_once(__DIR__ . "/../model/config.php");
 		//goes to the file config 
 	?>
+	<br>
+	<br>
+	<br>
 	<nav>
 		<ul>
 			<li>

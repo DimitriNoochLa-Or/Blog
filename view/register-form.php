@@ -8,6 +8,8 @@
 	<?php
 		require_once(__DIR__ . "/../model/config.php");
 	?>
+	<br>
+	<br>
 	<h1>登録<br>Tōroku</h1>
 
 

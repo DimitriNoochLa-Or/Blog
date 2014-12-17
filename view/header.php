@@ -6,10 +6,51 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	  <!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"></link>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
+
+
+
+   	 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div>
+          <a class="navbar-brand fonttext" href="blog.php"><font color="orange">Dimitri Storm</font></a>
+      </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right"></ul>
+           <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="fonttext navbar-brand"><a href="/view/navigation.php"><font color="orange">Posts</font></a></li>
+          <li class="navbar-brand fonttext"><a href="register.php"><font color="orange">Sign Up</font> <span class="sr-only">(current)</span></a></li>
+          <li class="fonttext navbar-brand"><a href="login.php"><font color="orange">Log in</font></a></li>
+         
+   
+        </ul>
+        <div class="soc pushleft">
+                <ul class="socials">
+                 
+                  <li id="f"><i class="fa fa-facebook"></i></li>
+                  <li><i class="fa fa-google"></i></li>
+                  <li id="t"><i class="fa fa-twitter"></i></li>
+                  <li><i class="fa fa-youtube"></i></li>
+                <!--  add anchor tags, and off u go --> 
+                    </ul> 
+        </div>
+
+      </div><!-- /.navbar-collapse -->
+      
+
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+

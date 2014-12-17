@@ -1,6 +1,7 @@
 <?php
 	require_once(__DIR__ . "/Database.php");
 	session_start();
+	session_regenerate_id(true);
 
 	$path = "/blog/";
 	//create a path variable so it takes the path to the blog fileS
