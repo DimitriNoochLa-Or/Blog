@@ -1,4 +1,6 @@
-
+.background{
+  background-color: gray;
+}
 #scene{
   position: fixed;
   width: auto;
@@ -78,7 +80,7 @@
 	position:fixed;
   top:100px;
 	left: 1000px;
-  width:80%;
+  width:90%;
 
 }
 .height{

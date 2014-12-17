@@ -46,7 +46,7 @@
          <div class="row pushright">
       <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-          <img data-src="holder.js/300x300" alt="...">
+          <img data-src="holder.js/300x300" alt="..." src="images.jpg">
           <div class="caption">
             <h3>Thumbnail label</h3>
             <p>Cold-pressed sriracha 
