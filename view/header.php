@@ -22,7 +22,15 @@
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div>
-          <a class="navbar-brand fonttext" href="blog.php"><font size="50px" color="orange">Dimitri Storm</font></a>
+          <a class="navbar-brand fonttext" href="blog.php">
+            <font size="50px" color="orange">D</font>
+            <font size="50px" color="green">i</font>
+            <font size="50px" color="red">m</font>
+            <font size="50px" color="orange">i</font>
+            <font size="50px" color="green">t</font>
+            <font size="50px" color="red">r</font>
+            <font size="50px" color="orange">i </font>
+          </a>
       </div>
         </form>
         <ul class="nav navbar-nav navbar-right"></ul>
@@ -32,7 +40,7 @@
           <li class="fonttext navbar-brand "><a href="post.php"><font color="orange">Create Post</font></a></li>
           <li class="navbar-brand fonttext "><a href="register.php"><font color="orange">Sign Up</font> <span class="sr-only">(current)</span></a></li>
           <li class="fonttext navbar-brand "><a href="login.php"><font color="orange">Log in</font></a></li>
-          <li class="fonttext navbar-brand "><a href="loginout-user.php"><font color="orange">Log in</font></a></li>
+          <li class="fonttext navbar-brand "><a href="logout-user.php"><font color="red">Log out</font></a></li>
 
          
    
