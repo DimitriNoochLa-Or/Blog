@@ -6,7 +6,7 @@
 
 	if($result){
 		while($row = mysqli_fetch_array($result)){
-			echo "<div class='read background'>";
+			echo "<div class='row ' id='background'>";
 			echo "<h2>" . $row['title'] . "</h2>";
 			echo "<br />";
 			echo "<p>" . $row['post'] . "</h4>";

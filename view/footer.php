@@ -1,6 +1,6 @@
     
 <!-- for background -->
-
+<!-- 
     <svg version="1.1" id="scene" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
        viewBox="0 0 250 100" enable-background="new 0 0 250 100" xml:space="preserve">
     <path id="shadow" fill="#D9E2E8" d="M42,99c-39.8,0.1-25.5-9.4,0-8.1C89.8,93.4,66.5,98.9,42,99z"/>
@@ -22,9 +22,9 @@
           C36.7,42.2,35.9,42.4,35.4,43z"/>
       </g>
     </g>
-    </svg>
+    </svg> -->
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/readmore.min.js"></script>
 
